@@ -40,7 +40,8 @@ public class BookingService {
 
     }
 
+    @Transactional
     public void deleteBooking(long bookingId) {
-        bookingRepository.deleteById(bookingId);
+        bookingRepository.delete(viewBooking(bookingId));
     }
 }

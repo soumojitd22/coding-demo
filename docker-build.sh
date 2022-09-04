@@ -1,0 +1,1 @@
+docker build -t coding-demo:0.0.1 .

@@ -15,6 +15,7 @@ import java.util.Map;
 @RestControllerAdvice
 public class ErrorHandler {
 
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(IdNotFoundException.class)
     public ErrorResponse handleIdNotFoundException(IdNotFoundException ex) {
         return new ErrorResponse(ex.getMessage());
