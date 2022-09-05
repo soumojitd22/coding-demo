@@ -1,4 +1,4 @@
-package dutta.soumojit.codingdemo.model;
+package dutta.soumojit.codingdemo.dto;
 
 import dutta.soumojit.codingdemo.entity.Hiker;
 import lombok.Getter;

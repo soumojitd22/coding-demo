@@ -3,22 +3,21 @@ package dutta.soumojit.codingdemo.service;
 import dutta.soumojit.codingdemo.entity.Booking;
 import dutta.soumojit.codingdemo.entity.Trail;
 import dutta.soumojit.codingdemo.exception.IdNotFoundException;
-import dutta.soumojit.codingdemo.model.BookingRequest;
+import dutta.soumojit.codingdemo.dto.BookingRequest;
 import dutta.soumojit.codingdemo.repository.BookingRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
 public class BookingService {
 
-    @Autowired
-    private BookingRepository bookingRepository;
+    private final BookingRepository bookingRepository;
 
-    @Autowired
-    private TrailService trailService;
+    private final TrailService trailService;
 
     @Transactional
     public long bookTrail(BookingRequest bookingRequest) {

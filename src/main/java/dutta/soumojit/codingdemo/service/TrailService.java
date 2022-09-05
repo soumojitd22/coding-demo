@@ -3,16 +3,15 @@ package dutta.soumojit.codingdemo.service;
 import dutta.soumojit.codingdemo.entity.Trail;
 import dutta.soumojit.codingdemo.exception.IdNotFoundException;
 import dutta.soumojit.codingdemo.repository.TrailRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class TrailService {
-
-    @Autowired
-    TrailRepository trailRepository;
+    private final TrailRepository trailRepository;
 
     public List<Trail> getAllTrails() {
         return trailRepository.findAll();

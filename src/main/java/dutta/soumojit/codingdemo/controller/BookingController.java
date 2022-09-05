@@ -1,10 +1,10 @@
 package dutta.soumojit.codingdemo.controller;
 
 import dutta.soumojit.codingdemo.entity.Booking;
-import dutta.soumojit.codingdemo.model.BookingRequest;
-import dutta.soumojit.codingdemo.model.BookingResponse;
+import dutta.soumojit.codingdemo.dto.BookingRequest;
+import dutta.soumojit.codingdemo.dto.BookingResponse;
 import dutta.soumojit.codingdemo.service.BookingService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -12,10 +12,10 @@ import javax.validation.Valid;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
+@RequiredArgsConstructor
 public class BookingController {
 
-    @Autowired
-    private BookingService bookingService;
+    private final BookingService bookingService;
 
     @PostMapping(path = "/book-trail", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     public BookingResponse bookTrail(@RequestBody @Valid BookingRequest bookingRequest) {

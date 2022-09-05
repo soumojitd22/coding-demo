@@ -1,4 +1,4 @@
-package dutta.soumojit.codingdemo.model;
+package dutta.soumojit.codingdemo.dto;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package dutta.soumojit.codingdemo.controller.advice;
+package dutta.soumojit.codingdemo.exception.handler;
 
 import dutta.soumojit.codingdemo.exception.IdNotFoundException;
-import dutta.soumojit.codingdemo.model.ErrorResponse;
+import dutta.soumojit.codingdemo.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
