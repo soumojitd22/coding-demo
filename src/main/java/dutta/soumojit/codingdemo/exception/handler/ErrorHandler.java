@@ -39,6 +39,6 @@ public class ErrorHandler {
     @ExceptionHandler(Exception.class)
     public ErrorResponse handleGenericException(Exception ex) {
         ex.printStackTrace();
-        return new ErrorResponse("Ahhh!! Let's take a break. I'm on it.");
+        return new ErrorResponse("Please take a coffee break. I'm on it.");
     }
 }
