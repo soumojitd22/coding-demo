@@ -5,10 +5,10 @@ import dutta.soumojit.codingdemo.entity.Trail;
 import dutta.soumojit.codingdemo.exception.IdNotFoundException;
 import dutta.soumojit.codingdemo.dto.BookingRequest;
 import dutta.soumojit.codingdemo.repository.BookingRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.stream.Collectors;
 
 @Service

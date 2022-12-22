@@ -1,11 +1,12 @@
 package dutta.soumojit.codingdemo.dto;
 
 import dutta.soumojit.codingdemo.entity.Hiker;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
+
 import java.util.List;
 
 @Getter

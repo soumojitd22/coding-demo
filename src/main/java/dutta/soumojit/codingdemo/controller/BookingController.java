@@ -4,10 +4,9 @@ import dutta.soumojit.codingdemo.entity.Booking;
 import dutta.soumojit.codingdemo.dto.BookingRequest;
 import dutta.soumojit.codingdemo.dto.BookingResponse;
 import dutta.soumojit.codingdemo.service.BookingService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
